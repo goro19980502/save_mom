@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 0a02d696b2eed0643980c93767ecfa61
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UICanvas: {instanceID: 0}
+  - btnOpen: {instanceID: 0}
+  - TutorialCanvas: {instanceID: 0}
+  - mov: {fileID: 15200000, guid: 1dfe68dad91e9dc4aae21088cb551540, type: 3}
+  - stop: {instanceID: 0}
+  - PauseCanvas: {instanceID: 0}
+  - Continues: {instanceID: 0}
+  - Reply: {instanceID: 0}
+  - BackMainMenu: {instanceID: 0}
+  - text: {instanceID: 0}
+  - player: {instanceID: 0}
+  - GameOverCanvas: {instanceID: 0}
+  - other: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

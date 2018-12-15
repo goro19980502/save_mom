@@ -64,11 +64,12 @@ public class main : MonoBehaviour {
 		float nowTime = Time.time - startTime; //遊戲已執行時間
 		int timeInt = 120 - (int)nowTime;
 		s = timeInt.ToString();
-//		text.text = "Time：" + s;
+		text.text = "Time：" + s;
 		Debug.Log("執行時間：" + s);
 		UpdateHpBar(timeInt);
-		if(timeInt == 0)
-			Instantiate(GameOverCanvas, Vector2.zero, Quaternion.identity);
+        if (timeInt == 0)
+            GameOverCanvas.SetActive(true);
+//			Instantiate(GameOverCanvas, Vector2.zero, Quaternion.identity);
 	}
 	void UpdateHpBar(int timeInt)
 	{

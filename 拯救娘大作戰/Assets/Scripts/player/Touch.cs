@@ -142,23 +142,10 @@ public class Touch : MonoBehaviour {
 
     gDefine.Direction HandDirection(Vector2 StartPos, Vector2 EndPos)
     {
-        gDefine.Direction mDirection;
-		//if (Mathf.Atan(Mathf.Abs(StartPos.y - EndPos.y) / Mathf.Abs(StartPos.x - EndPos.x)) >= 30 && Mathf.Atan(Mathf.Abs(StartPos.y - EndPos.y) / Mathf.Abs(StartPos.x - EndPos.x)) <= 70)
-		//{
-		//	if (StartPos.x > EndPos.x)
-		//	{
-		//		print("Left_up");
-		//		//手指向左滑動
-		//		mDirection = gDefine.Direction.Left_Up;
-		//	}
-		//	else
-		//	{
-		//		print("Right_up");
-		//		//手指向右滑動
-		//		mDirection = gDefine.Direction.Right_Up;
-		//	}
-		//}
-		//手指水平移動
+        gDefine.Direction mDirection = gDefine.Direction.none;
+        float xDiff = EndPos.x - StartPos.x;
+        float yDiff = EndPos.y - StartPos.y;
+        float slope = Mathf.Abs(yDiff / xDiff);
 		if (Mathf.Abs(StartPos.x - EndPos.x) > Mathf.Abs(StartPos.y - EndPos.y))
         {
 			
@@ -180,6 +167,17 @@ public class Touch : MonoBehaviour {
 			x = false;
 			mDirection = gDefine.Direction.none;
 		}
+        else if (slope <= 2 && slope >= 0.5)
+        {
+            if (StartPos.x > EndPos.x)
+            {
+                mDirection = gDefine.Direction.Left_Up;
+            }
+            else if(EndPos.x > StartPos.x)
+            {
+                mDirection = gDefine.Direction.Right_Up;
+            }
+        }
         else
         {
             if (m_screenPos.y > EndPos.y)

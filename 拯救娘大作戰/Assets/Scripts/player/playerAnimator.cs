@@ -32,12 +32,12 @@ public class playerAnimator : Touch
 			OnMove();
 		}
 	}
-	void OnMove()
+    int jup = 0;
+    void OnMove()
 	{
 		
 		if (Gesture == gDefine.Direction.Left && x == true)
 		{
-			ver = 2;
 			anim.SetTrigger("running");
 			print("!!!Left");
 			anim.transform.rotation = Quaternion.Euler(0, 270, 0);
@@ -45,42 +45,30 @@ public class playerAnimator : Touch
 		}
 		else if (Gesture == gDefine.Direction.Right && x == true)
 		{
-			ver = 3;
 			anim.SetTrigger("running");
 			anim.transform.rotation = Quaternion.Euler(0, 90, 0);
 			PlayerRigidbody.AddForce(new Vector3(10000, 0, 0));
 		}
-
-		else if (Gesture == gDefine.Direction.Up && x == true)
+		else if (Gesture == gDefine.Direction.Left_Up && x == true)
 		{
-			if(jup == 0 && ver == 2)
+			if(jup == 0 || jup == 1)
 			{
 				print("!!!LeftUP");
 				anim.SetTrigger("Jumping");
 				PlayerRigidbody.AddForce(-4000, 25000, 0);
-				jup = 1;
-			}
-			else if(jup == 0 && ver == 3)
-			{
-				print("!!!RightUP");
-				anim.SetTrigger("Jumping");
-				PlayerRigidbody.AddForce(4000, 25000, 0);
-				jup = 1;
-			}
-			
+				jup++;
+			}	
 		}
-/*		else if (Gesture == gDefine.Direction.Left_Up && x == true)
-		{
-			print("!!!Left_UP");
-			anim.SetTrigger("Jumping");
-			PlayerRigidbody.AddForce(-4000, 25000, 0);
-		}
-		else if (Gesture == gDefine.Direction.Right_Up && x == true)
-		{
-			print("!!!Right_UP");
-			anim.SetTrigger("Jumping");
-			PlayerRigidbody.AddForce(4000, 25000, 0);
-		}*/
+        else if (Gesture == gDefine.Direction.Right_Up && x == true)
+        {
+            if (jup == 0 || jup == 1)
+            {
+                print("!!!RightUP");
+                anim.SetTrigger("Jumping");
+                PlayerRigidbody.AddForce(4000, 25000, 0);
+                jup++;
+            }
+        }
 		else
 		{
 			anim.SetTrigger("wait");
@@ -88,14 +76,10 @@ public class playerAnimator : Touch
 		anim.SetTrigger("wait");
 		print(anim.transform.position);
 	}
-	int jup = 0;
-
 	void OnCollisionEnter(Collision collision)
 	{
 		jup = 0;
 		if (collision.gameObject.tag == "wallbox" || collision.gameObject.tag == "box")
 			anim.SetTrigger("push");
 	}
-
-
 }

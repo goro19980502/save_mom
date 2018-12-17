@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 362233557}
   - component: {fileID: 362233556}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Background_Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,7 +1033,7 @@ RectTransform:
   m_GameObject: {fileID: 428653550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.1, y: 4.73, z: 1}
+  m_LocalScale: {x: 20, y: 13, z: 1}
   m_Children: []
   m_Father: {fileID: 1250833677}
   m_RootOrder: 0
@@ -1530,7 +1530,7 @@ RectTransform:
   m_GameObject: {fileID: 953356808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 1.6, z: 1}
+  m_LocalScale: {x: 1.26, y: 4.37, z: 1}
   m_Children:
   - {fileID: 290782617}
   m_Father: {fileID: 1549227366}
@@ -1538,7 +1538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343, y: 181}
+  m_AnchoredPosition: {x: 820, y: 448}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953356811
@@ -1833,15 +1833,15 @@ RectTransform:
   m_GameObject: {fileID: 1065766310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.1, y: 4.73, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.07, z: 1}
   m_Children: []
   m_Father: {fileID: 1549227366}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.09}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -9, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065766312
 MonoBehaviour:
@@ -1912,7 +1912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 447, y: 431}
+  m_AnchoredPosition: {x: 715, y: 431}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122457958
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7490196, g: 0.84705883, b: 0.19607843, a: 1}
+  m_Color: {r: 0.5, g: 0, b: 0.053333282, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2096,7 +2096,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 14bd6d3cc5eff234e9aa1f2b5182369c, type: 2}
+  - {fileID: 2100000, guid: c1a5d109c1cf9084e9aae964f82c0a41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2235,7 +2235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1155280488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2767,12 +2767,12 @@ Prefab:
     - target: {fileID: 224865000971810292, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 343
+      value: 820
       objectReference: {fileID: 0}
     - target: {fileID: 224865000971810292, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 181
+      value: 448
       objectReference: {fileID: 0}
     - target: {fileID: 1712769825648218, guid: 0f94ee8ddbd7eb3409a663568d93ea67, type: 2}
       propertyPath: m_IsActive
@@ -2811,7 +2811,22 @@ Prefab:
     - target: {fileID: 224021312652333800, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 4.73
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 224021312652333800, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865000971810292, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865000971810292, guid: 0f94ee8ddbd7eb3409a663568d93ea67,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.37
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114180430194322834, guid: 0f94ee8ddbd7eb3409a663568d93ea67, type: 2}
@@ -3495,7 +3510,7 @@ RectTransform:
   m_GameObject: {fileID: 1722906689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 1.6, z: 1}
+  m_LocalScale: {x: 1.26, y: 4.37, z: 1}
   m_Children:
   - {fileID: 1482718556}
   m_Father: {fileID: 1250833677}
@@ -3503,7 +3518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343, y: 181}
+  m_AnchoredPosition: {x: 820, y: 448}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722906692
@@ -4026,7 +4041,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a6bd9c8f03037ab4b810da311888dd97, type: 2}
+  - {fileID: 2100000, guid: 58bc36618688b074bb66893c0d746552, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

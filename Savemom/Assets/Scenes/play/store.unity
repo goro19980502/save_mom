@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushbox: {fileID: 1568198921}
-  triggerAC: {fileID: 0}
+  triggerAC: {fileID: 1802539154}
 --- !u!65 &191277868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 191277864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a6ffcf6a46d6948be86ca66cc0c0fb, type: 3}
   m_Name: 
@@ -1955,52 +1955,52 @@ Prefab:
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.07
+      value: 13.67
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 11.73
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.15
+      value: 22.2
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: 8ace66e55e970b74e94ca3523a96809d,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ace66e55e970b74e94ca3523a96809d, type: 2}
@@ -2166,13 +2166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db776cdf73c0cd49bef4400343d5310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eleobj:
-  - {fileID: 514592020}
-  - {fileID: 1568198921}
-  - {fileID: 422623492}
-  - {fileID: 1717228203}
-  - {fileID: 191277864}
-  - {fileID: 1703449520}
+  eleobj: []
   GameWinnerCanvas: {fileID: 1709429636}
   UICanvas: {fileID: 1621977021}
   GameManager: {fileID: 971821764}
@@ -2345,7 +2339,7 @@ RectTransform:
   m_GameObject: {fileID: 1165192355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 22.2, y: 13.3, z: 1}
+  m_LocalScale: {x: 22.2, y: 13.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1438445601}
   m_RootOrder: 0
@@ -3306,7 +3300,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 88
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!1 &1717228203
 GameObject:
@@ -3369,7 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushbox: {fileID: 514592020}
-  triggerAC: {fileID: 0}
+  triggerAC: {fileID: 1802539154}
 --- !u!65 &1717228207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3430,7 +3424,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1717228203}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a6ffcf6a46d6948be86ca66cc0c0fb, type: 3}
   m_Name: 
@@ -4055,7 +4049,7 @@ Prefab:
     - target: {fileID: 224478688114770580, guid: dc54e953f37f22d4885600d5ea74aafd,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 13.3
+      value: 13.4
       objectReference: {fileID: 0}
     - target: {fileID: 224478688114770580, guid: dc54e953f37f22d4885600d5ea74aafd,
         type: 2}

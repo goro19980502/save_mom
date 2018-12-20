@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushbox: {fileID: 780621704}
-  triggerAC: {fileID: 0}
+  triggerAC: {fileID: 1514039534}
 --- !u!65 &116582551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116582547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a6ffcf6a46d6948be86ca66cc0c0fb, type: 3}
   m_Name: 
@@ -653,7 +653,7 @@ Prefab:
     - target: {fileID: 224021312652333800, guid: b74da6b335f904d408585eb8963ab46f,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.07
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 224021312652333800, guid: b74da6b335f904d408585eb8963ab46f,
         type: 2}
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 206508908}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f39e78067a5ed34a8716a91f61b21f6, type: 3}
   m_Name: 
@@ -1162,7 +1162,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 88
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!1 &354034615
 GameObject:
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 377398082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f39e78067a5ed34a8716a91f61b21f6, type: 3}
   m_Name: 
@@ -1670,7 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushbox: {fileID: 206508908}
-  triggerAC: {fileID: 0}
+  triggerAC: {fileID: 1514039534}
 --- !u!65 &620261438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620261434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a6ffcf6a46d6948be86ca66cc0c0fb, type: 3}
   m_Name: 
@@ -1891,7 +1891,7 @@ Prefab:
     - target: {fileID: 224478688114770580, guid: bdf4fd237bdc24d458724dc1afee0608,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 13.3
+      value: 13.4
       objectReference: {fileID: 0}
     - target: {fileID: 224478688114770580, guid: bdf4fd237bdc24d458724dc1afee0608,
         type: 2}
@@ -3597,7 +3597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushbox: {fileID: 377398082}
-  triggerAC: {fileID: 0}
+  triggerAC: {fileID: 1514039534}
 --- !u!65 &1635961538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3658,7 +3658,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635961534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a6ffcf6a46d6948be86ca66cc0c0fb, type: 3}
   m_Name: 
@@ -3908,13 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db776cdf73c0cd49bef4400343d5310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eleobj:
-  - {fileID: 377398082}
-  - {fileID: 206508908}
-  - {fileID: 780621704}
-  - {fileID: 1635961534}
-  - {fileID: 620261434}
-  - {fileID: 116582547}
+  eleobj: []
   GameWinnerCanvas: {fileID: 640107618}
   UICanvas: {fileID: 668863983}
   GameManager: {fileID: 837077061}
@@ -4725,7 +4719,7 @@ RectTransform:
   m_GameObject: {fileID: 2035951026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 22.2, y: 13.3, z: 1}
+  m_LocalScale: {x: 22.2, y: 13.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1927277609}
   m_RootOrder: 0

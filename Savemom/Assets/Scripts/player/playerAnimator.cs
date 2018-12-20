@@ -41,13 +41,13 @@ public class playerAnimator : Touch
 			anim.SetTrigger("running");
 			print("!!!Left");
 			anim.transform.rotation = Quaternion.Euler(0, 270, 0);
-			PlayerRigidbody.AddForce(new Vector3(-3300, 0, 0));
+			PlayerRigidbody.AddForce(new Vector3(-10000, 0, 0));
 		}
 		else if (Gesture == gDefine.Direction.Right && x == true)
 		{
 			anim.SetTrigger("running");
 			anim.transform.rotation = Quaternion.Euler(0, 90, 0);
-			PlayerRigidbody.AddForce(new Vector3(3300, 0, 0));
+			PlayerRigidbody.AddForce(new Vector3(10000, 0, 0));
 		}
 		else if (Gesture == gDefine.Direction.Left_Up && x == true)
 		{

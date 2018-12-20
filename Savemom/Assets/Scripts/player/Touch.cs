@@ -167,7 +167,7 @@ public class Touch : MonoBehaviour {
 			x = false;
 			mDirection = gDefine.Direction.none;
 		}
-        else if (slope <= 2 && slope >= 0.5)
+        else if (slope <= 5.67 && slope >= 0.364)
         {
             if (StartPos.x > EndPos.x)
             {

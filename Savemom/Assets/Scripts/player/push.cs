@@ -14,7 +14,8 @@ public class push : MonoBehaviour
 	{
 		if(pushbox.name == collider.gameObject.name)
 		{
-			collider.gameObject.SetActive(false);
+            //			collider.gameObject.SetActive(false);
+            this.gameObject.SetActive(false);
 			pushbox.SetActive(false);
 			triggerAC.Play();
 		}

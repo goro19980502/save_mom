@@ -13,7 +13,7 @@ public class count : MonoBehaviour {
 	void Update () {
 		if (eleobj == null)
 			eleobj = GameObject.FindGameObjectsWithTag("box");
-
+        Debug.Log("eleobj.len" + eleobj.Length);
 		for (int i = 0; i < eleobj.Length; i++)
 		{
 			if (eleobj[i].activeInHierarchy == false)

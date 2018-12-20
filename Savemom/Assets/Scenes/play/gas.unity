@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f39e78067a5ed34a8716a91f61b21f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushbox: {fileID: 0}
+  pushbox: {fileID: 780621704}
   triggerAC: {fileID: 0}
 --- !u!65 &116582551
 BoxCollider:
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f39e78067a5ed34a8716a91f61b21f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushbox: {fileID: 0}
+  pushbox: {fileID: 206508908}
   triggerAC: {fileID: 0}
 --- !u!65 &620261438
 BoxCollider:
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f39e78067a5ed34a8716a91f61b21f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushbox: {fileID: 0}
+  pushbox: {fileID: 377398082}
   triggerAC: {fileID: 0}
 --- !u!65 &1635961538
 BoxCollider:
